@@ -1,0 +1,20 @@
+AZ Devops Pipeline YAML :
+
+
+It will start with Trigger the trigger can be anything a scheduled Trigger for ex : Run pipeline at a certain time and certain day ,or manual Trigger , 
+it can also be something that is triggered by some another pipeline,  A trigger tells a Pipeline to run. It could be CI or Scheduled, manual(if not specified), 
+or after another build finishes.
+then we have a section called as pipeline it is divided into multiple steps . 
+the first one is stages there will be different stages for build deploy test and so on. 
+and then each stage is divided into multiple jobs .
+job will run on an agent each stage can have one or more jobs also these jobs can run on agent or it can be agentless 
+for example certain task does not require any agent for example if we are running a normal script let's say copy command copy this file  to that directory. 
+the jobs can be depend upon each other execute this job once the previous job is completed. 
+agent run a job and in their job we have multiple steps these steps can be a script or a task script 
+such as a shell script or Bash script all power shell  a task such as publish build artifact,  Azure app deploy, invoke rest API.
+
+
+----------------------------------XXXXXXXXXXXXXXXXXXXXXXXXXX----------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+Github Repo link:
+https://github.com/piyushsachdeva/AzureDevOps-Zero-to-Hero/tree/main/InterviewQuestions
